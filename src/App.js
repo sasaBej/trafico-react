@@ -1,9 +1,13 @@
-import react from "react";
-import reactDom from "react-dom";
+import './styles/normalize.scss';
+import './styles/App.scss';
+
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-   <h1>Sasa</h1>
+   <div>
+     <Header />
+   </div>
   );
 }
 
