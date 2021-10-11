@@ -1,4 +1,4 @@
-@import 'reset';
+@import 'normalize';
 @import 'fonts';
 @import 'styles';
 @import 'variables';
@@ -8,5 +8,8 @@
     max-width: 1213px;
     padding: 0 15px;
     margin: 0 auto;
+    // overflow: hidden;
+    
 }
+
 
