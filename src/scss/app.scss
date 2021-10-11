@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'fonts';
+@import 'styles';
+@import 'variables';
+@import 'components/all';
+
+.container {
+    max-width: 1213px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
