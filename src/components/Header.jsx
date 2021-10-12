@@ -37,14 +37,17 @@ function Header() {
                     </nav>
                 </div>
             </div>
-            <div className="hero">    
-                <div className="container">
-                    <div className="top__content">
-                        <h1 className="top__content-title">Your awesome traffic permit consultant.</h1>
-                        <button className="top__content-btn btn__orange ">get started</button>
+            <div className="hero__container">
+                <div className="hero">    
+                    <div className="container">
+                        
+                        <h1 className="hero__title">Your awesome traffic permit consultant.</h1>
+                        <button className="hero__btn btn__orange ">get started</button>
+                        
                     </div>
                 </div>
             </div>
+            
         </header>
     )
 }
