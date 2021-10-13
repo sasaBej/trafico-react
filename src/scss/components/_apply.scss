@@ -1,0 +1,37 @@
+.apply {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-img {
+            display: inline-block;
+            padding-top: 139px;
+            transform: translateX(-81px);
+        }
+    }
+    &__text {
+        padding-top: 222px;
+        max-width: 462px;
+        transform: translateX(-25px);
+        &-title {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #EE4D47;
+        }
+        &-descr {
+            padding-top: 25px;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 40px;
+            color: #402B2B;
+        }
+    }
+    
+}
