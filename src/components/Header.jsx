@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../assets/img/logo.svg';
+import topCar from '../assets/img/top_car.svg';
 
 function Header() {
     return (
@@ -45,6 +46,9 @@ function Header() {
                         <button className="hero__btn btn__orange ">get started</button>
                         
                     </div>
+                </div>
+                <div className="hero__car">
+                    <img src={topCar} alt="top car" />
                 </div>
             </div>
             
