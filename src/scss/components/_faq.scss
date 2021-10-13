@@ -1,0 +1,44 @@
+.faq {
+    background-image: url(../../assets/img/faq-bg.svg);
+    background-repeat: no-repeat;
+    float: right;
+    background-size: cover;
+    &__container {
+        margin: 0 auto;
+        max-width: 1250px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-q {
+            padding-top: 208px;
+            transform: translateX(-112px);
+            & h2 {
+                
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
+                letter-spacing: 0.1em;
+                color: #EE4D47;
+                text-transform: uppercase;
+            }
+            & p {
+                padding-top: 2px;
+                font-family: DM Serif Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 140%;
+                color: #402B2B;
+                max-width: 540px;
+            }
+        }
+    }
+    &__img-guy {
+        padding-top: 107px;
+        transform: translateX(-178px);
+    }
+}

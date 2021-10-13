@@ -3,6 +3,7 @@ import React from 'react';
 import Header from "./components/Header";
 import About from './components/About';
 import Apply from './components/Apply';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Header />
      <About />
      <Apply />
+     <Faq />
    </div>
   );
 }
