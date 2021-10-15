@@ -4,6 +4,10 @@
 @import 'variables';
 @import 'components/all';
 
+
+body {
+    background-color: #FEF8F5;
+}
 .container {
     max-width: 1213px;
     padding: 0 15px;

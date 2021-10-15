@@ -5,7 +5,7 @@ import applyGirl from '../assets/img/girl_call.svg';
 function Apply() {
     return (
         <section className="apply">
-            <div className="container">
+            <div className="containerA">
                 <div className="apply__container">
                     <div className="apply__container-img">
                         <img src={applyGirl} alt="Girl call image" />

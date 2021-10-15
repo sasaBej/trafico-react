@@ -1,19 +1,26 @@
+.containerA {
+    max-width: 1346px;
+    // padding: 0 15px;
+    margin: 0 auto;
+}
 .apply {
-    margin-bottom: 111px;
+    margin-bottom: 12px;
     &__container {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-wrap: wrap;
         &-img {
             display: inline-block;
             padding-top: 139px;
-            transform: translateX(-81px);
+            // transform: translateX(-81px);
+            
         }
     }
     &__text {
         padding-top: 222px;
-        max-width: 462px;
-        transform: translateX(-25px);
+        max-width: 500px;
+        padding-left: 57px;
+        // transform: translateX(-25px);
         &-title {
             font-family: Rubik;
             font-style: normal;

@@ -1,19 +1,28 @@
+.containerF {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .faq {
     background-image: url(../../assets/img/faq-bg.svg);
+    // background-position: center;
     background-repeat: no-repeat;
-    float: right;
-    background-size: cover;
-    &__container {
-        margin: 0 auto;
-        max-width: 1250px;
-    }
+    min-height: 1700px;
+    
+    background-position: right center;
+    background-origin: content-box;
     &__content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-top: 100px;
         &-q {
             padding-top: 208px;
-            transform: translateX(-112px);
+            // transform: translateX(-112px);
+            // padding-left: 65px;
+            transform: translateX(64px);
+
             & h2 {
                 
                 font-family: Rubik;
@@ -33,12 +42,12 @@
                 font-size: 48px;
                 line-height: 140%;
                 color: #402B2B;
-                max-width: 540px;
+                max-width: 493px;
             }
         }
     }
     &__img-guy {
         padding-top: 107px;
-        transform: translateX(-178px);
+        // transform: translateX(-178px);
     }
 }
