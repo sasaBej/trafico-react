@@ -50,4 +50,28 @@
         padding-top: 107px;
         // transform: translateX(-178px);
     }
+    &__extend-button {
+        float: right;
+        margin-right: 65px;
+        cursor: pointer;
+        width: 550px;
+        padding: 0 35px;
+        height: 90px;
+        border-radius: 10px;
+        background-color: rgba(237,77,71, 0.2);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & p {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #ED4D47 ;
+        }
+    }
 }

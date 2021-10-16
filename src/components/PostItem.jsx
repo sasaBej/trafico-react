@@ -4,6 +4,7 @@ const PostItem = (props) => {
     const [isActive, setIsActive] = useState(false);
     return (
         <div className="post">
+            
             <div 
             className="post__question"
             onClick={()=>setIsActive(!isActive)}

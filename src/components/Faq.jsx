@@ -36,14 +36,22 @@ function Faq() {
                     <div className="faq__img-guy">
                         <img src={faqImg} alt="Image Guy Question" />
                     </div>
-                </div>               
+                </div>    
+                       
                 <div className="question_com"> 
-
-                {posts.map((post) =>
-                        <PostItem post={post} key={post.id}/>
-                )}
+                {/* here I have to make 2 different columns with different function
+                 I don't known any other solution at the moment
+                 */}
+                        {posts.map((post) =>
+                                <PostItem post={post} key={post.id}/>
+                        )}
                     
                 </div>
+
+                <div className="faq__extend-button">
+                    <p>load more</p>
+                </div>
+                
            </div>
         </section>
     )
