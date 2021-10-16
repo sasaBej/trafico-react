@@ -1,16 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import faqImg from '../assets/img/bottom_guy.svg';
 import PostItem from './PostItem';
 
-async function fetchComments() {
-    const response = await axios.get("https://lxpi9qne2a.api.quickmocker.com/getReactFAQs");
-    console.log(response.data.response);
-}
-fetchComments();
+
 
 function Faq() {
+
+    const [posts, setPosts] = useState([]);
+
+    async function fetchComments() {
+            // const res = await axios.get("https://lxpi9qne2a.api.quickmocker.com/getReactFAQs");
+            const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+            const firstPage = res.data;
+            const onPage = firstPage.slice(0, 12);
+            setPosts(onPage);
+        }
+        
+    useEffect(() => {
+        fetchComments()  
+    }, [])
+
+    
+
+
     return (
         <section className="faq">
             <div className="containerF">
@@ -24,7 +38,11 @@ function Faq() {
                     </div>
                 </div>               
                 <div className="question_com"> 
-                    <PostItem/>
+
+                {posts.map((post) =>
+                        <PostItem post={post} key={post.id}/>
+                )}
+                    
                 </div>
            </div>
         </section>
