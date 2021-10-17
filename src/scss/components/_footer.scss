@@ -1,0 +1,103 @@
+
+.footer {
+    &__car {
+        transform: translateY(48px);
+    }
+    &__top {
+        padding-left: 189px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    &__main {
+        // padding-top: 124px;
+        // padding-left: 64px;
+        // min-height: 951px;
+        background-image: url(../../assets/img/vector_foter.svg); //line is separated from bg    
+        background-color: #0F264C;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 662px;
+        max-width: 1400px;
+        border-top-right-radius: 100px;     
+        &-descr {
+            // transform: translateY(-45px);
+            max-width: 330px;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            // &::before {
+            //     position: absolute;
+            //     content: "";
+            //     width: 10px;
+            //     height: 160px;
+            //     background-color: #ED4D47;
+            //     border-radius: 5px 0 0 5px;
+            //     margin-left: -50px;
+            // }
+        }
+    }
+}
+
+.form {
+    margin-right: 43px;
+    // margin-right: 140px;
+    width: 550px;
+    height: 440px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 52px 75px;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    label {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 40px;
+        color: #402B2B;
+        height: 38px;
+    }
+    label[for="mail"] {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    input {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 40px;
+        width: 400px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 1px solid rgba(238, 77, 71, 0.5);
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    input:focus {
+        outline: none;
+        border: 2px solid #EE4D47;
+        box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 40px;
+        color: #402B2B;
+    }
+    input[type=email] {
+        
+        margin-bottom: 30px;
+    }
+    input[type=text],
+    input[type=email] {
+        padding: 11px 0 11px 40px;
+    }
+}
