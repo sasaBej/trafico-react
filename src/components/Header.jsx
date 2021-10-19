@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import logo from '../assets/img/logo.svg';
 import topCar from '../assets/img/top_car.svg';
 
 function Header() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    });
     return (
         <header>
             <div className="top">
@@ -48,7 +56,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="hero__car">
-                    <img src={topCar} alt="top car" />
+                    <img data-aos="fade-right" src={topCar} alt="top car" />
                 </div>
             </div>
             

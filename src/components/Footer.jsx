@@ -1,4 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import footerCar from '../assets/img/bottom_car.svg';
 import logoFooter from '../assets/img/logo_bt.svg';
@@ -7,6 +10,12 @@ import twfooter from '../assets/img/twiter.svg';
 import ifooter from '../assets/img/instagram.svg';
 
 function Footer() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    });
+
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
 
@@ -20,7 +29,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer__car">
-                <img src={footerCar} alt="Footer car" />
+                <img data-aos="fade-right" src={footerCar} alt="Footer car" />
             </div>
             <div className="footer__main">
                 <div className="container">

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import aboutGuy from '../assets/img/top_guy.svg';
 
 function About() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    });
     return (
         <section className="about">
             <div className="container">
@@ -18,7 +25,7 @@ function About() {
                         </p>
                     </div>
                     <div className="about__container-img">
-                        <img src={aboutGuy} alt="about guy" />
+                        <img data-aos="fade-left" src={aboutGuy} alt="about guy" />
                     </div>
                 </div>
             </div>

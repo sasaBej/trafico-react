@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import applyGirl from '../assets/img/girl_call.svg';
 
 function Apply() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    });
     return (
         <section className="apply">
             <div className="containerA">
                 <div className="apply__container">
                     <div className="apply__container-img">
-                        <img src={applyGirl} alt="Girl call image" />
+                        <img data-aos="fade-right" src={applyGirl} alt="Girl call image" />
                     </div>
                     <div className="apply__text">
                         <h2  className="apply__text-title">how to apply</h2>

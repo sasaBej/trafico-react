@@ -44,3 +44,7 @@ body {
     }
 }
 
+.move__left {
+    transition: transform .7s ease-in-out; 
+    transform: translateX(-400%);
+}
