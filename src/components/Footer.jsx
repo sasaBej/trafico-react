@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import footerCar from '../assets/img/bottom_car.svg';
 import logoFooter from '../assets/img/logo_bt.svg';
@@ -7,6 +7,16 @@ import twfooter from '../assets/img/twiter.svg';
 import ifooter from '../assets/img/instagram.svg';
 
 function Footer() {
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+
+    const formSubmit = (e, resetForm) => {
+        e.preventDefault();
+        const formData = {name, mail};
+        setMail("");
+        setName("");
+        
+    };
     return (
         <footer className="footer">
             <div className="footer__car">
@@ -18,13 +28,30 @@ function Footer() {
                         <div className="footer__main-descr">
                         We provide traffic management consultants so you get started quickly, contact us for a quote today!
                         </div>
-                        <form className="form">
+                        {/* form  */}
+                        <form 
+                        className="form"
+                        onSubmit={formSubmit}
+                        >
                             <label >Name</label>
-                            <input type="text"  name="name" placeholder="Your name" required/>
+                            <input 
+                            type="text" 
+                            placeholder="Your name" 
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                            />
                             <label >Email address</label>
-                            <input type="email"  name="mail" placeholder="Your email address"  required/>
-                            <button className="btn__orange" type="submit" form="sendform">get started</button>
+                            <input 
+                            type="email" 
+                            placeholder="Your email address" 
+                            value={mail} 
+                            onChange={(e) => setMail(e.target.value)}
+                            required
+                            />
+                            <button className="btn__orange">get started</button>
                         </form> 
+                        {/* form */}
                     </div>
 
                     <div className="footer__nav">
