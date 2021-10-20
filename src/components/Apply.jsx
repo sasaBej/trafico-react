@@ -12,7 +12,7 @@ function Apply() {
         });
     });
     return (
-        <section className="apply">
+        <section className="apply" id="apply">
             <div className="containerA">
                 <div className="apply__container">
                     <div className="apply__container-img">

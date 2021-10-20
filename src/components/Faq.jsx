@@ -26,7 +26,7 @@ function Faq() {
 
 
     return (
-        <section className="faq">
+        <section className="faq" id="faq">
             <div className="containerF">
                 <div className="faq__content">
                     <div className="faq__content-q">

@@ -10,8 +10,10 @@ function About() {
             duration: 1000,
         });
     });
+
+
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="container">
                 <div className="about__container">
                     <div className="about__container-left">

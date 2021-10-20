@@ -1,7 +1,11 @@
 import React, {useEffect} from 'react';
 
+
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 import logo from '../assets/img/logo.svg';
 import topCar from '../assets/img/top_car.svg';
@@ -13,34 +17,60 @@ function Header() {
         });
     });
     return (
-        <header>
+        <header id="header">
             <div className="top">
-                <div className="container">
+                <div className="container">               
+                    
                     <nav className="navbar">
-                        <a className="logo" href="#">
+                        <Link
+                        to="header"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className="logo">
                             <img src={logo} alt="logo Trafico" />
-                        </a>
+                        </Link>
                         
                         <ul className="nav">
                             <li className="nav__item">
-                            <a href="#aboutS" className="nav__link">
+                            <Link
+                            to="about"
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            className="nav__link">
                                 about
-                            </a>
+                            </Link>
                             </li>
                             <li className="nav__item">
-                            <a href="#htaS" className="nav__link">
+                            <Link
+                            to="apply"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            className="nav__link">
                                 how to
-                            </a>
+                            </Link>
                             </li>
                             <li className="nav__item">
-                            <a href="#faqS" className="nav__link">
+                            <Link
+                            to="faq"
+                            spy={true}
+                            smooth={true}
+                            duration={700}
+                            className="nav__link">
                                 faqs
-                            </a>
+                            </Link>
                             </li>
                             <li className="nav__item">
-                            <a href="#formS" className="nav__link nav__link-btn">
+                            <Link
+                            to="footer"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}                           
+                            className="nav__link nav__link-btn">
                                 contact us
-                            </a>
+                            </Link>
                             </li>
                         </ul>
                     </nav>
@@ -51,7 +81,12 @@ function Header() {
                     <div className="container">
                         
                         <h1 className="hero__title">Your awesome traffic permit consultant.</h1>
-                        <button className="hero__btn btn__orange ">get started</button>
+                        <Link
+                        to="footer"
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                        className="hero__btn btn__orange ">get started</Link>
                         
                     </div>
                 </div>

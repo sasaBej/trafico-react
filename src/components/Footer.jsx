@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,6 +9,7 @@ import logoFooter from '../assets/img/logo_bt.svg';
 import fbfooter from '../assets/img/facebook.svg';
 import twfooter from '../assets/img/twiter.svg';
 import ifooter from '../assets/img/instagram.svg';
+// import reactDom from 'react-dom';
 
 function Footer() {
     useEffect(() => {
@@ -19,7 +21,7 @@ function Footer() {
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
 
-    const formSubmit = (e, resetForm) => {
+    const formSubmit = (e) => {
         e.preventDefault();
         const formData = {name, mail};
         setMail("");
@@ -27,7 +29,7 @@ function Footer() {
         
     };
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="footer__car">
                 <img data-aos="fade-right" src={footerCar} alt="Footer car" />
             </div>
@@ -64,19 +66,42 @@ function Footer() {
                     </div>
 
                     <div className="footer__nav">
-                        <a className="logo__bottom" aria-label="logo" href="#">
+                        <Link
+                        to="header"
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                        className="logo__bottom" aria-label="logo" >
                             <img src={logoFooter} alt="logo image" />
-                        </a>
+                        </Link>
                         {/* I need to refactor this code */}
                         <ul className="nav_bottom"> 
                             <li className="nav_bottom__item nav__item">
-                                <a href="#aboutS" className="nav__link">about</a>
+                                <Link
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={700}
+                                className="nav__link">about
+                                </Link>
                             </li>
                             <li className="nav_bottom__item nav__item">
-                                <a href="#htaS" className="nav__link">how to</a>
+                                <Link
+                                to="apply"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                className="nav__link">how to
+                                </Link>
                             </li>
                             <li className="nav_bottom__item nav__item">
-                                <a href="#faqS" className="nav__link">faqs</a>
+                                <Link
+                                to="faq"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                className="nav__link">faqs</Link>
                             </li>
                         </ul>  
                         {/*  */}
@@ -87,7 +112,8 @@ function Footer() {
                 <div className="bottom__links ">
                     <div className="copy">Copyright @ 2019</div>
                     <ul className="bottom__links-social">
-                        <li className="social__link-fa"><a href="#">
+                        <li className="social__link-fa">
+                            <a href="#">
                                 <img src={fbfooter} alt="Facebook social link" />
                             </a></li>
                         <li className="social__link-tw"><a href="#">
