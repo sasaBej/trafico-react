@@ -34,8 +34,9 @@ function Footer() {
                 <img data-aos="fade-right" src={footerCar} alt="Footer car" />
             </div>
             <div className="footer__main">
-                <div className="container">
+                    <div className="container"> 
                     <div className="footer__top">
+                       
                         <div className="footer__main-descr">
                         We provide traffic management consultants so you get started quickly, contact us for a quote today!
                         </div>
@@ -63,7 +64,7 @@ function Footer() {
                             <button className="btn__orange">get started</button>
                         </form> 
                         {/* form */}
-                    </div>
+                        </div>
 
                     <div className="footer__nav">
                         <Link

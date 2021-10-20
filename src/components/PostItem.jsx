@@ -11,12 +11,12 @@ const PostItem = (props) => {
             >
                 <p>{props.post.title}</p>
                 <div className="post__question-sign">
-                    <span></span>
-                    <span></span>
+                {isActive ? <span></span> : <><span></span><span></span></>}
 
                 </div>
             </div>
-            {isActive && <div className="post__answer">
+            {isActive &&
+            <div className="post__answer">
                 {props.post.body}
             </div>}
             

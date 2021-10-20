@@ -4,7 +4,7 @@
         transform: translateY(48px);
     }
     &__top {
-        padding-left: 176px;
+        padding-left: 77px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -16,8 +16,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 662px;
-        max-width: 1400px;
-        border-top-right-radius: 100px;     
+        // max-width: 1400px;
+        // border-top-right-radius: 100px;     
         &-descr {
             transform: translateY(-47px);
             max-width: 330px;
@@ -45,13 +45,19 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 47px;
-        padding-left: 127px;
+        padding-left: 28px;
+        
     }
 }
 
+.nav_bottom {
+    & li:last-child {
+        margin-right: 131px;
+}
+}
 .form {
     transform: translateY(-117px);
-    margin-right: 32px;
+    margin-right: 131px;
     width: 550px;
     height: 440px;
     border-radius: 10px;
@@ -117,7 +123,7 @@
     &-social {
         list-style: none;
         display: flex;
-        margin-right: 132px;
+        margin-right: 130px;
         & li {
             padding-left: 30px;
         }
