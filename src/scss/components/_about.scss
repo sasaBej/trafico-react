@@ -55,4 +55,50 @@
     &-img {
         transform: translate(24px, -62px);
     }
+
+
+    @media (max-width: 768px) {
+        &-sub {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        &-img {
+            transform: translate(0, 0)
+        }
+        &-img img{
+            max-width: 273px;
+            height: auto;
+        }
+        &-desc {
+            padding-top: 0px;
+            margin-bottom: 22px;
+            
+        }
+    }
+    @media (max-width: 425px) {
+    &-text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    &-sub {
+        font-size: 17px;
+        line-height: 16px;
+        padding: 30px 55px;
+        font-weight: 400;
+    }
+    &-img {
+        transform: translate(0, 0)
+    }
+    &-img img{
+        max-width: 169px;
+        height: auto;
+    }
+    &-desc {
+        padding-top: 0px;
+        margin-bottom: 22px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+    
 }

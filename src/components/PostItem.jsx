@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 const PostItem = (props) => {
     const [isActive, setIsActive] = useState(false);
     return (
+        // I have to refactor this part of code
         <div className="post">
             
             <div 

@@ -10,12 +10,14 @@
     display: flex;
     justify-content: space-between;
     padding-left: 31px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
 }
 .nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // white-space: nowrap;
     transform: translateY(-5px);
     &__item {
         margin: 0;
@@ -60,10 +62,15 @@
             }
         }
     }
-}
-.hero__container {
-    // margin: 0 auto;
-    // max-width: 1600px;
+    @media (max-width: 1024px) {
+        padding-top: 40px;
+    }
+    @media (max-width: 768px) {
+        &__item {
+            display: none;
+        }
+    }
+    
 }
 .hero {
     padding-top: 124px;
@@ -73,6 +80,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
     &__title{
         max-width: 741px;
         font-family: DM Serif Display;
@@ -81,10 +89,9 @@
         line-height: 100%;
         color: #fff;
         margin-bottom: 80px;
+        
     }
-    &__btn {
-        // transform: translateY(-8px);
-    }
+
     &__car {
         transform: translateY(-160px);
         & img {
@@ -94,6 +101,60 @@
             
         }
     }
+    @media (max-width: 1380px) {
+        &__title {
+           font-size: 85px; 
+        }
+        &__car {
+            & img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+      }
+      @media (max-width: 1024px) {
+        &__title {
+            padding-top: 65px;
+            font-size: 65px; 
+            margin-bottom: 125px;
+        }
+        &__car {
+            & img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+      }
+      @media (max-width: 768px) {
+          &__title {
+            font-size: 54px;
+          }
+          &__car {
+            & img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+      }
+      @media (max-width: 425px) {
+        min-height: 500px;
+        &__title {
+            padding-top: 0;
+            font-size: 36px;
+            margin-bottom: 50px;
+          }
+          &__car {
+            transform: translateY(-90px);
+            & img {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+            }
+        }
+      }
 }
 
 

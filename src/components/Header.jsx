@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,44 +33,44 @@ function Header() {
                         
                         <ul className="nav">
                             <li className="nav__item">
-                            <Link
-                            to="about"
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            className="nav__link">
-                                about
-                            </Link>
-                            </li>
-                            <li className="nav__item">
-                            <Link
-                            to="apply"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            className="nav__link">
-                                how to
-                            </Link>
-                            </li>
-                            <li className="nav__item">
-                            <Link
-                            to="faq"
-                            spy={true}
-                            smooth={true}
-                            duration={700}
-                            className="nav__link">
-                                faqs
-                            </Link>
-                            </li>
-                            <li className="nav__item">
-                            <Link
-                            to="footer"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}                           
-                            className="nav__link nav__link-btn">
-                                contact us
-                            </Link>
+                                <Link
+                                to="about"
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="nav__link">
+                                    about
+                                </Link>
+                                </li>
+                                <li className="nav__item">
+                                <Link
+                                to="apply"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                className="nav__link">
+                                    how to
+                                </Link>
+                                </li>
+                                <li className="nav__item">
+                                <Link
+                                to="faq"
+                                spy={true}
+                                smooth={true}
+                                duration={700}
+                                className="nav__link">
+                                    faqs
+                                </Link>
+                                </li>
+                                <li className="nav__item">
+                                <Link
+                                to="footer"
+                                spy={true}
+                                smooth={true}
+                                duration={1000}                           
+                                className="nav__link nav__link-btn">
+                                    contact us
+                                </Link>
                             </li>
                         </ul>
                     </nav>
