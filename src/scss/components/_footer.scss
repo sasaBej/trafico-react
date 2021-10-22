@@ -48,6 +48,35 @@
         padding-left: 28px;
         
     }
+    @media (max-width: 1118px) {
+        &__main-descr {
+            transform: none;
+            margin-bottom: 40px;
+        }
+        &__top {
+            padding-top: 70px;
+            margin-bottom: 30px;
+            transform: none;
+            justify-content: center;
+            padding-left: 0;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        &__car img{
+            max-width: 273px;
+            height: auto;
+        }
+       
+    } 
+    @media (max-width: 424px) {
+        &__car img{
+            max-width: 169px;
+            height: auto;
+        }
+    }
 }
 
 .nav_bottom {
@@ -110,6 +139,22 @@
         font-size: 18px;
         line-height: 40px;
         color: #402B2B;
+    }
+    @media (max-width: 1118px) {
+        transform: none;
+        margin-right: 0;
+    }
+    @media (max-width: 768px) {
+        height: auto;
+        width: auto; 
+        // max-width: 550px;
+        // padding: 52px 75px;
+        & input {
+            width: auto;
+        }
+    }
+    @media (max-width: 424px) {
+        padding: 16px 26px;
     }
     
 }

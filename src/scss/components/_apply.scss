@@ -41,7 +41,41 @@
             color: #402B2B;
         }
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1218px) {
+        &__container {
+            flex-direction: column-reverse;
+            align-items: center;  
+            &-img {
+                padding-top: 0;
+            }     
+    }
+        &__text {
+            padding-top: 10px;
+        }
+        
+}
+    @media (max-width: 767px) {
+        &__container { 
+            &-img img{
+                width: 100%;
+                max-width: 273px;
+                height: auto;
+            }     
+    }
+        } 
+    @media (max-width: 424px) {
+        &__text {
+            &-title {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            &-descr {
+                padding-top: 0;
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
         
     }
+        
 }

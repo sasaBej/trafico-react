@@ -45,26 +45,27 @@ function Footer() {
                         className="form"
                         onSubmit={formSubmit}
                         >
-                            <label >Name</label>
+                            <label >Name</label><br />
                             <input 
                             type="text" 
                             placeholder="Your name" 
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
-                            />
-                            <label >Email address</label>
+                            /> <br />
+                            <label >Email address</label><br />
                             <input 
                             type="email" 
                             placeholder="Your email address" 
                             value={mail} 
                             onChange={(e) => setMail(e.target.value)}
                             required
-                            />
+                            /> 
+                            <br />
                             <button className="btn__orange">get started</button>
                         </form> 
                         {/* form */}
-                        </div>
+                    </div>
 
                     <div className="footer__nav">
                         <Link
@@ -76,7 +77,7 @@ function Footer() {
                             <img src={logoFooter} alt="logo image" />
                         </Link>
                         {/* I need to refactor this code */}
-                        <ul className="nav_bottom"> 
+                         <ul className="nav_bottom"> 
                             <li className="nav_bottom__item nav__item">
                                 <Link
                                 to="about"
@@ -103,10 +104,10 @@ function Footer() {
                                 smooth={true}
                                 duration={500}
                                 className="nav__link">faqs</Link>
-                            </li>
-                        </ul>  
-                        {/*  */}
-                    </div>
+                            </li> 
+                        </ul>   
+                        
+                     </div> 
                 </div>
             </div>
             <div className="container">
